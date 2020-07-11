@@ -1,0 +1,252 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="stil.css" rel="stylesheet" type="text/css" />
+    <link href="css/nivo-slider.css" rel="stylesheet" type="text/css" />
+    <link href="css/light/light.css" rel="stylesheet" type="text/css" />
+    <link href="css/default/default.css" rel="stylesheet" type="text/css" />
+    <link href="css/dark/dark.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+
+    <div id="zemin">
+
+
+    <div id="logo">
+    <a href="Default.aspx">
+    <img src="logo/logo.png" alt="">
+    </a>
+    <div class="arama">
+    
+    
+    	<asp:TextBox ID="txtarama" runat="server" placeholder="Ara"></asp:TextBox>
+        
+        <asp:Button ID="btnarama" class="arka" runat="server" Text="    " Height="42px" 
+            Width="45px" onclick="btnarama_Click"  />
+        
+
+    </div>
+
+    </div> <!-- logo !-->
+
+
+    <div id="menu">
+    
+    <ul>
+    	<li><a href="Default.aspx"><img src="resimler/list.png" alt=""> Anasayfa  </a></li>
+    	<li><a href="sanatcilar.aspx"><img src="resimler/list.png" alt=""> Sanatçılar ve Gruplar </a></li>
+    	<li><a href="yabanci.aspx"><img src="resimler/list.png" alt=""> Yabancı Müzikler  </a></li>
+    	<li><a href="ziyaretci.aspx"><img src="resimler/list.png" alt=""> Öneri ve İstekler  </a></li>
+    </ul>
+    
+    </div> <!-- menu sonu !-->
+
+
+
+    <div id="orta">
+        <div id="nevo">
+     <div id="siteslider">
+	<div class="slider-wrapper theme-light">
+    <div class="ribbon"></div>
+	
+	<div id="slider" class="nivoSlider">
+    <img src="resimler/slide1.jpg" alt="" data-thumb="resimler/slide1.jpg"  />
+    <img src="resimler/slide2.jpg" data-thumb="resimler/slide2.jpg"  alt="" </a>
+    <img src="resimler/slide3.jpg" data-thumb="resimler/slide3.jpg" alt=""  />
+    <img src="resimler/slide4.jpg"  data-thumb="resimler/slide4.jpg" alt="" />
+</div>
+<div id="htmlcaption" class="nivo-html-caption">
+    
+</div>
+	</div>
+	</div> <!-- #siteslider -->
+    </div> <!-- nevo sonu !-->
+
+    <div id="sol">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </div> <!-- sol son !-->
+
+
+
+    <div id="sag">
+    
+       <div class="uye">
+         <asp:Panel ID="Panel1" runat="server">
+          <p> Üye Girişi </p>
+             <asp:TextBox ID="txtkadi" runat="server" placeholder="Kullanıcı Adı" ></asp:TextBox>
+             <asp:TextBox ID="txtsifre"  runat="server"  placeholder="Parola" TextMode="Password"></asp:TextBox> <br /> <br />
+             <asp:Button ID="btngiris" runat="server" Text="Giriş" onclick="giris_Click" 
+                 BackColor="#FF6600" ForeColor="#FFFFCC" Height="40px" Width="70px" 
+                 Font-Size="Large"/> 
+             <a href="sunutma.aspx">Şifremi Unuttum!</a> 
+                 <div class="kayit">
+             <a href="kayit.aspx"> Kayıt Ol</a>
+             <span class="hata">
+                 <asp:Literal ID="ltuyari" runat="server"></asp:Literal>
+             </span>
+                </div>
+             <br /> 
+             <asp:Literal ID="ltu" runat="server"></asp:Literal> 
+         </asp:Panel> <!-- panel sonu !-->
+
+         <asp:Panel ID="Panel2" runat="server" style="margin-top: 9px"> 
+         <p> Profiliniz </p>
+          <div class="lt">
+         <asp:Literal ID="ltbil" runat="server"></asp:Literal> 
+        </div>
+             <br /> 
+             <asp:Button ID="btnoturum" runat="server" Text="Çıkış" 
+                 onclick="btnoturum_Click" BackColor="#FF6600" ForeColor="#FFFFCC" 
+                 Font-Size="Large" Height="32px" style="margin-top: 0px" Width="60px" />
+
+         </asp:Panel> <!-- panel 2 sonu !-->
+
+         </div> 
+         <hr>
+
+         <div id="mhaber">
+
+         <h2>Müzikler ' den</h2>
+
+            <div class="haber">
+            <h1> 20 <br> <br> Mayıs </h1>
+            <img src="resimler/aydilge.jpg" alt="">
+            <h4> Aydilge'den Yeni Single; "Yangın Var" </h4>
+            <p> Aydilge'nin yeni teklisi 14 Mayıs ta tüm dijital platform ve radyolarda... </p>
+            
+            </div>
+
+             <div class="haber">
+            <h1> 14 <br> <br> Mayıs </h1>
+            <img src="resimler/ece.jpg" alt="">
+            <h4> Ece Seçkin'in Yeni Maxi Single'ı Dijital Platformlarda Yayında! </h4>
+            <p> Ece Seçkin, Mayıs sonunda piyasaya çıkacak bir yıllık yoğun bir çalışmanın ardından hazırladığı yepyeni
+             maxi single'ı "Aman Aman" ile dijital platformlarda yayında. </p>
+            
+            </div>
+
+             <div class="haber">
+            <h1> 13 <br> <br> Mayıs </h1>
+            <img src="resimler/ferhat.jpg" alt="">
+            <h4> Ferhat Göçer'den Beklenen Klip: "Yıllarım Gitti" </h4>
+            <p> Ferhat Göçer, yeni albümü "Sığmıyorsun Geceye ve Zamana"nın çıkış şarkısı olan "Yıllarım Gitti" için kamera karşısına geçti.  </p>
+            
+            </div>
+
+             <div class="haber">
+            <h1> 13 <br> <br> Mayıs </h1>
+            <img src="resimler/goksel.jpg" alt="">
+            <h4> Göksel, Yeni Albümünün 2. Klibini "Denize Bıraksam"a Çekti! </h4>
+            <p> Göksel, "Sen Orda Yoksun” albümünün 2. video klibini, 
+            Midilli Adası'nda Mabel Matiz'le beraber yazdığı "Denize Bıraksam" adlı şarkısına çekti. </p>
+            
+            </div>
+
+            <hr>
+            
+         </div><!-- müzik haber sonu !-->
+
+         <div id="yorum">
+         
+         <h2>Son Yapılan Yorumlar</h2>
+            
+             <asp:Literal ID="ltyorum" runat="server"></asp:Literal>
+
+         </div><!-- yorum sonu !-->
+
+    <div id="kategori">
+    <h2> Kategoriler </h2>
+    <ul>
+    	<li><a href="Default.aspx"><img src="resimler/list.png" alt=""> Türk Pop </a></li>
+    	<li><a href="trrock.aspx"><img src="resimler/list.png" alt=""> Türk Rock </a></li>
+    	<li><a href="trsanat.aspx"><img src="resimler/list.png" alt=""> Türk Sanat Müzikleri </a></li>
+    	    	
+    </ul>
+    
+    </div><!-- kategori sonu !-->
+
+    </div> <!-- sag sonu !-->
+
+
+
+    </div> <!-- orta sonu !-->
+    
+
+
+
+    </div><!-- zemin son !-->
+
+    
+    <div id="alt">
+    
+        <div class="alticerik">
+        
+        <h2> Sosyal Medyalardan da Bizi Takip Edebilirisin! </h2>
+
+         <a href="https://www.facebook.com/pages/Musics-M/1609006239383201?sk=timeline"><img src="resimler/facebook.png" alt=""></a>
+         <a href="https://www.facebook.com/pages/Musics-M/1609006239383201?sk=timeline"><img src="resimler/twitter.png" alt=""></a>
+         <a href="https://www.facebook.com/pages/Musics-M/1609006239383201?sk=timeline"><img src="resimler/email.png" alt=""></a>
+         <a href="https://www.facebook.com/pages/Musics-M/1609006239383201?sk=timeline"><img src="resimler/gplus.png" alt=""></a>
+        
+
+        </div>
+
+        <div class="kopyalanamaz">
+        
+        <p> <i> Kopyalanamaz </i> Tasarım ve Düzen <i>Samet Özyürek </i> tarafından yapılmıştır. İzinsiz Herhangi bir Bilgi Kullanılamaz.</p>
+        
+        </div>
+
+        <div class="logo1">
+        
+        <a href="Default.aspx"> <img src="logo/logo.png" alt=""> </a>
+        
+        </div>
+
+    </div><!-- alt sonu !-->
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	    $('#slider').nivoSlider({
+	        effect: 'fade', //Specify sets like: 'fold,fade,sliceDown'
+	        slices: 15,
+	        animSpeed: 500, //Slide transition speed
+	        pauseTime: 3000,
+	        startSlide: 0, //Set starting Slide (0 index)
+	        directionNav: true, //Next & Prev
+	        directionNavHide: true, //Only show on hover
+	        controlNav: true, //1,2,3...
+	        controlNavThumbs: false, //Use thumbnails for Control Nav
+	        controlNavThumbsFromRel: false, //Use image rel for thumbs
+	        controlNavThumbsSearch: '.jpg', //Replace this with...
+	        controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+	        keyboardNav: true, //Use left & right arrows
+	        pauseOnHover: false, //Stop animation while hovering
+	        manualAdvance: false, //Force manual transitions
+	        captionOpacity: 0.8, //Universal caption opacity
+	        beforeChange: function () { },
+	        afterChange: function () { },
+	        slideshowEnd: function () { }, //Triggers after all slides have been shown
+	        lastSlide: function () { }, //Triggers when last slide is shown
+	        afterLoad: function () { } //Triggers when slider has loaded
+
+	    });
+	</script>
+
+    
+    </form>
+</body>
+</html>

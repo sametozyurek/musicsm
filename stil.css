@@ -1,0 +1,116 @@
+﻿body 
+{
+    background-image:url(resimler/arka.jpg); background-repeat:no-repeat; background-color:#000111; color:White;
+}
+.temizle { clear:both; }
+
+#zemin { width:980px; margin:0px auto; }
+
+#logo img { margin:50px 50px; opacity:0.7; }
+#logo .arama { float:right; margin:80px 75px; }
+#logo .arama input[type="text"] { padding:10px; font-size:14px; color:Gray;}
+
+.arka{background-image:url(resimler/search.png); }
+
+#nevo { width:980px; height:365px; }
+
+#menu { padding:0px 0px 15px 0px; }
+#menu ul li { display:inline;  margin-left:40px; }
+#menu ul li a { text-decoration:none; color:White; font-weight:bold; font-size:23px; }
+#menu ul li a:hover { color:#E40AD7; }
+
+#sag { width:250px; float:right; }
+#sol { width:715px; float:left; }
+
+#sag .uye { margin-top:50px; }
+#sag .uye p { background-color:Orange; color:white; font-size:20px; padding:10px; font-weight:bold; font-style:italic;}
+#sag .uye p:hover { color:#E40AD7; }
+#sag .uye input[type="text"] { padding:6px; margin-top:3px; }
+#sag .uye input[type="password"] { padding:6px; margin-top:3px; }
+#sag .uye a { text-decoration:none; color:White;  padding:15px; }
+
+#mhaber h2 { background-color:Orange; color:white; font-size:20px; padding:10px; font-style:italic;}
+#mhaber h2:hover { color:#E40AD7; }
+#mhaber .haber h1 { float:left; padding:15px; color:aqua; text-align:center; margin-top:-20px;}
+#mhaber .haber { margin-top:20px; margin-bottom:10px; padding:7px 0px 7px 0px;}
+#mhaber .haber h4 { font-size:14px; color:Red;}
+#mhaber img { width:120px; height:50px;  }
+#mhaber p { font-size:13px; }
+
+#yorum h2 { background-color:Orange; color:white; font-size:20px; padding:10px; font-style:italic; }
+#yorum .ltyorum { color:White; padding:10px; margin-top:6px;}
+
+#kategori h2 { background-color:Orange; color:white; font-size:20px; padding:10px; font-style:italic; }
+#kategori ul { margin-right:20px; }
+#kategori ul li { margin-top:4px; list-style-type:none;  }
+#kategori ul li a { text-decoration:none; color:White; font-weight:bold; font-size:18px;  }
+#kategori ul li a:hover { color:#E40AD7; }
+
+
+
+#alt { height:350px; margin-top:3000px; background-color:Orange;}
+#alt .alticerik { margin-left:600px; padding:70px; }
+#alt .alticerik img { margin-left:50px; }
+#alt .kopyalanamaz { padding:20px; margin-left:260px; margin-top:30px; }
+#alt .logo1 { margin-top:-300px; margin-left:120px; }
+#alt .logo1 img { opacity:0.7; }
+
+
+.kayit { margin-top:8px; }
+#sag .uye a:hover { color:#E40AD7; }
+#sag .kayit a:hover{ color:#E40AD7;  }
+
+#kayitol { width:700; margin-top:60px; float:left; margin-left:150px;}
+#kayitol h1 { font-size:24px; color:yellow;}
+
+.lt { font-size:22px; color:yellow;}
+.hata { color:Red; font-size:18px; }
+
+#sunuttum { margin-top:80px; }
+#sunuttum h3 { color:Yellow; }
+
+#guncelle { margin-top:50px; }
+#guncelle h1 { color:Yellow; }
+
+.aa a { text-decoration:none; color:aqua; font-size:18px; margin-left:10px; }
+.aa a:hover{ color:orange; }
+
+#muzikekle { margin-top:40px; }
+#muzikekle h2 { color:Yellow; }
+
+#muzikk { width:500px; height:50px;}
+#muzik { margin-top:40px; width:500px;}
+#muzik .embed { float:left; padding:10px; }
+#muzik .embed h3 { font-size:20px; color:yellow; border-bottom:2px solid white; margin-bottom:-10px; margin-top:25px;}
+
+#smuzik { width:500px; height:50px; }
+#sanat { margin-top:40px; width:500px;}
+#sanat h3 { font-size:20px; color:yellow; border-bottom:2px solid white; margin-bottom:-10px; margin-top:25px; }
+#rmuzik { width:500px; height:50px; }
+#rock { margin-top:40px; width:500px; }
+#rock h3 { font-size:20px; color:yellow; border-bottom:2px solid white; margin-bottom:-10px; margin-top:25px; }
+
+#ymuzikk { width:500px; height:50px;}
+#ymuzik { margin-top:40px; width:500px;}
+#ymuzik .ymuzikk { float:left; padding:10px; }
+#ymuzik .ymuzikk h3 { font-size:20px; color:yellow; border-bottom:2px solid white; margin-bottom:-10px; margin-top:25px;}
+
+#sanatci { margin-top:60px; }
+#sanatci .icerik { float:left; margin-top:15px;}
+#sanatci .icerik h2 { color:yellow; font-size:28px; }
+#sanatci .icerik img { width:300px; }
+#sanatci .icerik h3 { color:Yellow; font-size:24px; }
+#sanatci .icerik h4 { font-size:16px; color:Red; margin-top:-6px; padding:5px;}
+#sanatci .icerik a { color:white; text-decoration:none; }
+#sanatci .icerik a:hover { color:#E40AD7; }
+
+#istek h4 { color:Yellow; font-size:22px; }
+#istek { margin-top:60px; }
+
+#yorum h3 { margin-top:-5px; }
+#yorum h4 { margin-top:-11px; color:Red;}
+#yorum p { margin-top:-30px; padding:5px;}
+#yorum { border-bottom:2px; }
+
+#ara h3 { font-size:20px; color:yellow; border-bottom:2px solid white; margin-bottom:-10px; margin-top:60px; }
+#ara { width:500px; }
